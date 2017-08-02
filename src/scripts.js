@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#new-message").on("click", function () {
 
         $.ajax({
-            url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
+            url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
             cache: false
         }).done(function (data) {
 
