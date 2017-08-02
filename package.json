@@ -1,0 +1,21 @@
+{
+  "name": "random_quote_machine",
+  "version": "1.0.0",
+  "description": "A free code camp project.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@personal_git:gavin771/fcc_random_quote_machine.git"
+  },
+  "keywords": [],
+  "author": "QualityWorks Consulting Group Jamaica (http://qualityworkscg.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-gh-pages": "0.5.4",
+    "gulp-install": "1.1.0"
+  }
+}
