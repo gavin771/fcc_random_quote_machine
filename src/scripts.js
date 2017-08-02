@@ -3,16 +3,17 @@ $(document).ready(function () {
     $("#new-message").on("click", function () {
 
         $.ajax({
-            url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
-            cache: false
+            url: "https://api.forismatic.com/api/1.0/?",
+            dataType: "jsonp",
+            data: "method=getQuote&format=jsonp&lang=en&jsonp=?"
         }).done(function (data) {
 
             var html = "";
             var currentTime = moment().format("h:mm:ss A");
 
             $("#last-gnerated").html(currentTime);
-            $("#message").html(data[0].content);
-            $("#author").html(data[0].title);
+            $("#message").html(data.quoteText);
+            $("#author").html("- "+ data.quoteAuthor);
         }).fail(function () {
             $("#message").html("A new quote couldn't be retrieved... :(");
         });
