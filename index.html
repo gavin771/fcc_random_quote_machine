@@ -22,7 +22,7 @@
     <div class="ui column stackable center page grid">
         <div class="five wide column"></div>
         <div class="ui six wide column">
-            <div class="ui fluid card red">
+            <div class="ui fluid card raised">
                 <div class="content">
                     <div class="header">Today's Random Quote</div>
                     <div class="meta">Last generated: <span id="last-gnerated"></span></div>
@@ -33,8 +33,11 @@
                         <em class="right floated meta" id="author">- Author...</em>
                     </div>
                 </div>
-                <div class="ui bottom attached button" id="new-message">
-                    <i class="add icon"></i> New Quote
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <a class="ui basic blue button" href='#' target='_blank' id="tweet"><i class="twitter icon"></i> Share on Twitter</a>
+                        <div class="ui basic green button" id="new-message"><i class="add icon"></i> New Quote</div>
+                    </div>
                 </div>
             </div>
         </div>

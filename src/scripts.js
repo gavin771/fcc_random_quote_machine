@@ -18,6 +18,8 @@ $(document).ready(function () {
             $("#last-gnerated").html(currentTime);
             $("#message").html(data.quoteText);
             $("#author").html("- " + data.quoteAuthor);
+            $("#tweet").attr("href", "https://twitter.com/home/?status=" + data.quoteText +
+                ' (' + data.quoteAuthor + ')');
         }).fail(function () {
             $("#message").html("A new quote couldn't be retrieved... :(");
         });
