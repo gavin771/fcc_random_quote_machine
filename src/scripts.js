@@ -11,7 +11,8 @@ $(document).ready(function () {
             var currentTime = moment().format("h:mm:ss A");
 
             $("#last-gnerated").html(currentTime);
-            console.log(data[0].content);
+            $("#message").html(data[0].content);
+            $("#author").html(data[0].title);
         }).fail(function () {
             $("#message").html("A new quote couldn't be retrieved... :(");
         });
