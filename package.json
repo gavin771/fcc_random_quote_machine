@@ -11,7 +11,7 @@
     "url": "git@personal_git:gavin771/fcc_random_quote_machine.git"
   },
   "keywords": [],
-  "author": "QualityWorks Consulting Group Jamaica (http://qualityworkscg.com/)",
+  "author": "Gavin Samuels",
   "license": "MIT",
   "devDependencies": {
     "del": "3.0.0",
